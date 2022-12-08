@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  dashboard:
+    image: sensor:latest
+    volumes:
+      - ~/.config/gcloud:/root/.config/gcloud
+    env_file:
+      - .env
+
+networks:
+  webnet:
